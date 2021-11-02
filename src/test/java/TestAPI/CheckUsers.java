@@ -21,6 +21,7 @@ public class CheckUsers {
         assertThat(userGeorg).extracting(ListUsers::getLast_name).contains("Bluth");
         assertThat(userGeorg).extracting(ListUsers::getEmail).contains("george.bluth@reqres.in.");
     }
+
     @Test
     public void getUserMichael() {
         List<ListUsers> userMichael = given()
